@@ -1,0 +1,50 @@
+.wordCardContent {
+    width: 500px; /* Ширина карточки */
+    height: 250px; /* Высота карточки */
+    background-color: #f278c13f; /* Цвет фона карточки */
+    border: 2px dashed rgb(217, 46, 183); /* Пунктирная рамка */
+    display: flex;
+    align-self: center;
+    margin: 40px;
+    justify-content: center;
+    cursor: pointer; /* Указатель при наведении */
+    transition: transform 0.5s; /* Плавное изменение при переворачивании */
+    user-select: none; /* Запрет на выделение текста */
+}
+  
+  .wordCardContent:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    z-index: 2;
+  }
+  
+  .back {
+    transform: rotateY(180deg); /* Перевернутая задняя сторона */
+  }
+  
+  .flipped .front {
+    transform: rotateY(180deg); /* Переворачиваем спереди на заднюю */
+  }
+  
+  .flipped .back {
+    transform: rotateY(0deg); /* Переворачиваем заднюю на спереди */
+  }
+  
+  h3 {
+    font-weight: bold; /* Жирный шрифт */
+    color: black; /* Черный цвет слова */
+  }
+  

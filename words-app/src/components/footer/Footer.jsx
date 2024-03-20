@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';
+import styles from './Footer.module.css';
 
 function Footer() {
 return (
-    <footer className="footer">
-        <div className="footer-content">
+    <footer className={styles.footer}>
+        <div className={styles.footerContent}>
             <p>&copy; 2022 Карточки</p>
-            <div className="social-links">
+            <div className={styles.socialLinks}>
                 <a href="https://twitter.com/">Twitter</a>
                 <a href="https://facebook.com/">Facebook</a>
             </div>

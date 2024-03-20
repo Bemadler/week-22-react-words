@@ -1,14 +1,15 @@
 import React from 'react';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <ul className="nav-list">
-        <li className="nav-item"><a href="/">Главная</a></li>
-        <li className="nav-item"><a href="/word-list">Список слов</a></li>
-        <li className="nav-item"><a href="/add-word">Добавить слово</a></li>
-        <li className="nav-item"><a href="/login">Войти</a></li> 
+    <nav className={styles.navbar}>
+      <ul className={styles.navList}>
+        <li className={styles.logo}><a img="" src=""></a></li>
+        <li className={styles.navMain}><a href="">Главная</a></li>
+        <li className={styles.navWordList}><a href="">Список слов</a></li>
+        <li className={styles.navAddWord}><a href="">Добавить слово</a></li>
+        <li className={styles.navLogin}><a href="">Войти</a></li> 
       </ul>
     </nav>
   );
