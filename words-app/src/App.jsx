@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar.jsx';
 import WordList from './components/wordlist/WordList.jsx';
@@ -8,11 +9,11 @@ import AddWordForm from './components/addword/AddWord.jsx';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <WordCard/>
-      <AddWordForm/>
-      <WordList/>
-      <Footer/>
+      <Navbar />
+      <WordCard />
+      <AddWordForm />
+      <WordList />
+      <Footer />
     </div>
   );
 }
